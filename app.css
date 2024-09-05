@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    margin-top: 150px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.stopwatch {
+    width: 85%;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: -50px;
+}
+
+#display {
+    position: relative;
+    width: 100%;
+    font-size: 180px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid rgba(255, 254, 254, 0.1);
+}
+
+.controls button {
+    margin: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 5px 3px;
+    border-radius: 15px;
+    width: 13%;
+    background: #bae8e8;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    transition: 0.8s ease;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.controls button:hover {
+    background-color: #142d4c;
+    color: #ffffff;
+}
+
+ul#laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.laps {
+    position: absolute;
+    top: 70%;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+
+}
+
+ul#laps li {
+
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+}
+
+@media(max-width:900px) {
+    /* .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .stopwatch {
+        width: 90%;
+    }
+
+    #display {
+        font-size: 100px;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+    .controls button {
+        font-size: 15px;
+        width: 12%;
+    }
+}
+
+@media(max-width:630px) {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stopwatch {
+        width: 80%;
+    }
+
+    #display {
+        font-size: 80px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .controls button {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .laps {
+        top: 46%;
+    }
+}
